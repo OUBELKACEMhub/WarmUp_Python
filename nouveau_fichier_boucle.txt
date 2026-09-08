@@ -1,0 +1,5 @@
+hello
+ahmed 
+Le mode 'w' crée le fichier s'il n'existe pas.
+son contenu s'il existe déjà.
+Opération terminée avec succès.
