@@ -291,7 +291,7 @@ from sqlalchemy.orm import joinedload
 # print("\n--- 10. Clients ayant passé plus de 2 commandes ---")
 # q10 = session.query(Client.nom,func.count(Commande.id).label('nb_c')).join(Commande).group_by(Client.id).having( func.count(Commande.id) >=2).all()
 # if not q10: print("Aucun client n'a passé plus de 2 commandes.")
-# for cli in q10: print(cli.nom)
+# for cli in q10: print(cli.nom)        
 
 # print("\n--- 11. Commandes du 3e trimestre 2025 ---")
 # q11 = session.query(Commande).filter(extract('month',Commande.date_commande).between(7,9),extract('year',Commande.date_commande)==2025).all()
